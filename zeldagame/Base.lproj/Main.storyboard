@@ -444,19 +444,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="midna2HD" translatesAutoresizingMaskIntoConstraints="NO" id="yTT-HU-c6x">
-                                <rect key="frame" x="-89" y="182" width="592" height="478"/>
+                                <rect key="frame" x="-89" y="131" width="592" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zelda" translatesAutoresizingMaskIntoConstraints="NO" id="y0G-a3-ELR">
-                                <rect key="frame" x="3" y="198" width="409" height="447"/>
+                                <rect key="frame" x="3" y="147" width="409" height="447"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Zelda-botw" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-HP-Z2n">
-                                <rect key="frame" x="10" y="200" width="394" height="443"/>
+                                <rect key="frame" x="18" y="147" width="394" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeV-CU-F2N">
-                                <rect key="frame" x="102" y="680" width="214" height="48"/>
+                                <rect key="frame" x="102" y="639" width="214" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted">
@@ -473,6 +473,24 @@
                                     <action selector="resultsButton:" destination="zhh-Ry-VCh" eventType="touchUpInside" id="s7D-Mq-xCc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luh-8a-p1D">
+                                <rect key="frame" x="102" y="715" width="209" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Restart the Quiz!">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Futura-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restart:" destination="zhh-Ry-VCh" eventType="touchUpInside" id="D9t-p7-lMn"/>
+                                    <segue destination="Iyr-xT-fhP" kind="show" id="MCN-iX-yzH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s36-ua-TFx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -483,7 +501,7 @@
                         <outlet property="daruk" destination="R50-tK-ZuJ" id="1aY-Qu-0ri"/>
                         <outlet property="link" destination="y0G-a3-ELR" id="zTm-y7-iGt"/>
                         <outlet property="mipha" destination="yTT-HU-c6x" id="aI1-HG-My2"/>
-                        <outlet property="zelda" destination="rbs-HP-Z2n" id="TXS-nP-xma"/>
+                        <outlet property="zelda" destination="rbs-HP-Z2n" id="UeQ-rN-6vn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcC-Dr-CSY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -494,6 +512,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="0OJ-6K-p2L"/>
         <segue reference="ddU-8r-dMd"/>
+        <segue reference="MCN-iX-yzH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-08-12 at 5.36.03 PM" width="693" height="257"/>

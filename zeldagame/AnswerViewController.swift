@@ -14,10 +14,6 @@ class AnswerViewController: UIViewController {
     
     var total = answerKeyOne + answerKeyTwo + answerKeyThree
 
-    func ok() {
-        print(total)
-    }
-    
     
     //bokoblin image
     @IBOutlet weak var bokoblin: UIImageView!
@@ -31,13 +27,24 @@ class AnswerViewController: UIViewController {
     //zelda image
     @IBOutlet weak var zelda: UIImageView!
     
-    
     //daruk image
     @IBOutlet weak var daruk: UIImageView!
     
     
     //Link image
     @IBOutlet weak var link: UIImageView!
+    
+    
+    //restart button
+    
+    
+    @IBAction func restart(_ sender: UIButton) {
+        if total >= 0 {
+            total = 0
+            print(total)
+        }
+    }
+    
     
     //results button
     @IBAction func resultsButton(_ sender: UIButton) {
@@ -52,6 +59,7 @@ class AnswerViewController: UIViewController {
                 //put rest of immages as true here
                 print(total)
                 
+                
             } else {
                 bokoblin.isHidden = true
             }
@@ -64,10 +72,11 @@ class AnswerViewController: UIViewController {
                 link.isHidden = true
                 
                 print(total)
+                
             } else {
                 mipha.isHidden = true
             }
-        } else if total == 3 && total == 6 {
+        } else if total == 3 {
             if zelda.isHidden {
                 zelda.isHidden = false
                 bokoblin.isHidden = true
@@ -90,7 +99,7 @@ class AnswerViewController: UIViewController {
                 daruk.isHidden = true
             }
             
-        } else {
+        } else if total == 5 {
             if link.isHidden {
                 link.isHidden = false
                 daruk.isHidden = true
@@ -101,6 +110,18 @@ class AnswerViewController: UIViewController {
                 link.isHidden = true
             }
             
+        } else if total == 6 {
+            if zelda.isHidden {
+                zelda.isHidden = false
+                bokoblin.isHidden = true
+                mipha.isHidden = true
+                daruk.isHidden = true
+                link.isHidden = true
+                
+                print(total)
+            } else {
+                zelda.isHidden = true
+            }
         }
         
     }
