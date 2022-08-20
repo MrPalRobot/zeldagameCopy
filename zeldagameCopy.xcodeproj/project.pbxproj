@@ -308,6 +308,7 @@
 				DEVELOPMENT_TEAM = R4N7TAVWFM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zeldagame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zelda Quiz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,6 +337,7 @@
 				DEVELOPMENT_TEAM = R4N7TAVWFM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zeldagame/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zelda Quiz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
