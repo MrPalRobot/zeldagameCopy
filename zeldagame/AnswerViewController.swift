@@ -17,22 +17,30 @@ class AnswerViewController: UIViewController {
     
     //bokoblin image
     @IBOutlet weak var bokoblin: UIImageView!
+    //bokoblin Label
+    @IBOutlet weak var bokoL: UILabel!
     
     
     //mipha image
     @IBOutlet weak var mipha: UIImageView!
-    
+    //mipha Label
+    @IBOutlet weak var miphL: UILabel!
     
     
     //zelda image
     @IBOutlet weak var zelda: UIImageView!
+    //zelda Label
+    @IBOutlet weak var zelL: UILabel!
     
     //daruk image
     @IBOutlet weak var daruk: UIImageView!
-    
+    //daruk Label
+    @IBOutlet weak var darL: UILabel!
     
     //Link image
     @IBOutlet weak var link: UIImageView!
+    //Link Label
+    @IBOutlet weak var linkL: UILabel!
     
     
     //restart button
@@ -56,12 +64,18 @@ class AnswerViewController: UIViewController {
                 zelda.isHidden = true
                 daruk.isHidden = true
                 link.isHidden = true
-                //put rest of immages as true here
+               
                 print(total)
                 
+                bokoL.isHidden = false
+                miphL.isHidden = true
+                zelL.isHidden = true
+                darL.isHidden = true
+                linkL.isHidden = true
                 
             } else {
                 bokoblin.isHidden = true
+                bokoL.isHidden = true
             }
         } else if total >= 0 && total <= 2 {
             if mipha.isHidden {
@@ -73,8 +87,16 @@ class AnswerViewController: UIViewController {
                 
                 print(total)
                 
+                bokoL.isHidden = true
+                miphL.isHidden = false
+                zelL.isHidden = true
+                darL.isHidden = true
+                linkL.isHidden = true
+
+                
             } else {
                 mipha.isHidden = true
+                miphL.isHidden = true
             }
         } else if total == 3 {
             if zelda.isHidden {
@@ -85,8 +107,17 @@ class AnswerViewController: UIViewController {
                 link.isHidden = true
                 
                 print(total)
+                
+                bokoL.isHidden = true
+                miphL.isHidden = true
+                zelL.isHidden = false
+                darL.isHidden = true
+                linkL.isHidden = true
+
+                
             } else {
                 zelda.isHidden = true
+                zelL.isHidden = true
             }
         } else if total == 4 {
             if daruk.isHidden {
@@ -95,8 +126,18 @@ class AnswerViewController: UIViewController {
                 bokoblin.isHidden = true
                 mipha.isHidden = true
                 link.isHidden = true
+                
+                print(total)
+                
+                bokoL.isHidden = true
+                miphL.isHidden = true
+                zelL.isHidden = true
+                darL.isHidden = false
+                linkL.isHidden = true
+
             } else {
                 daruk.isHidden = true
+                darL.isHidden = true
             }
             
         } else if total == 5 {
@@ -106,8 +147,18 @@ class AnswerViewController: UIViewController {
                 zelda.isHidden = true
                 bokoblin.isHidden = true
                 mipha.isHidden = true
+                
+                print(total)
+                
+                bokoL.isHidden = true
+                miphL.isHidden = true
+                zelL.isHidden = true
+                darL.isHidden = true
+                linkL.isHidden = false
+
             } else {
                 link.isHidden = true
+                linkL.isHidden = true
             }
             
         } else if total == 6 {
@@ -119,8 +170,18 @@ class AnswerViewController: UIViewController {
                 link.isHidden = true
                 
                 print(total)
+                
+                
+                bokoL.isHidden = true
+                miphL.isHidden = true
+                zelL.isHidden = false
+                darL.isHidden = true
+                linkL.isHidden = true
+
+                
             } else {
                 zelda.isHidden = true
+                zelL.isHidden = true
             }
         }
         
@@ -143,7 +204,11 @@ class AnswerViewController: UIViewController {
         zelda.isHidden = true
         daruk.isHidden = true
         link.isHidden = true
-        
+        bokoL.isHidden = true
+        miphL.isHidden = true
+        zelL.isHidden = true
+        darL.isHidden = true
+        linkL.isHidden = true
         
     }
    
